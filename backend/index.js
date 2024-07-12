@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const dataRoutes = require("./routes/data");
+require("dotenv").config();
 
 const app = express();
 const port = 3000;
@@ -9,7 +10,7 @@ const port = 3000;
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://wankhedeameyb:admin123@cluster0.kbirj.mongodb.net/stockData");
+mongoose.connect(process.env.MONGO_URI);
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
