@@ -2,7 +2,8 @@
 
 This project is a mini-website designed to collect and display real-time price data for selected stocks and cryptocurrencies. It features a backend that fetches data from an API and stores it in MongoDB, and a frontend that displays the data in a dynamically updating table.
 
-
+## Realtime price fetching with minimal yet clean UI
+[](https://github.com/WankhedeAmey/backend-dev-realitime-stock/blob/main/img/ss_stocks.png?raw=true)
 
 ## Features
 
